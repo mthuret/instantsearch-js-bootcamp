@@ -1,0 +1,129 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui,
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ais-search-box {
+  max-width: 100%;
+}
+
+.ais-search-box input {
+  max-width: 100%;
+  border: 2px solid #d04a37;
+}
+
+main {
+  display: flex;
+  padding: 10px;
+}
+
+.results {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ais-hits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ais-hits--item {
+  display: flex;
+  flex-direction: column;
+  max-width: 154px;
+  margin: 10px;
+}
+
+.ais-hits--item img {
+  width: 154px;
+  height: 231px;
+}
+
+.ais-hits--item .title {
+  padding: 5px;
+  background-color: #d04a37;
+}
+
+em{
+  background-color: #5f0c00;
+}
+
+.ais-refinement-list--list {
+  display: flex;
+  flex-direction: column;
+}
+
+.ais-refinement-list--label {
+  color: #d04a37;
+  margin-right: 5px;
+}
+
+.ais-refinement-list--label:hover {
+  color: #f35a44;
+}
+
+.ais-refinement-list--count {
+  background-color: #d04a37;
+  color: white;
+  float: right;
+  border-radius: 31px;
+  font-size: 12px ;
+  padding: 0px 7px;
+  line-height: 1.5em;
+}
+
+.ais-refinement-list--label
+  input[type='checkbox']:checked
+ {
+  border-color: #d04a37;
+  background: #d04a37
+    url("data:image/svg+xml;utf8,<svg viewBox='0 0 10 9' xmlns='http://www.w3.org/2000/svg'><path d='M1 4.88l2.378 2.435L9.046 1.6' stroke-width='1.6' stroke='%23FFF' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'/></svg>")no-repeat
+    50% / 10px;
+}
+
+#pagination{
+  align-self: center;
+}
+
+.ais-pagination--item__active{
+  background: #d04a37;
+}
+
+.ais-pagination--link:hover{
+  color:#d04a37;
+}
+
+.ais-current-refined-values--clear-all{
+  background: #d04a37;
+}
+
+.ais-current-refined-values--link div{
+  color: #d04a37;
+}
+
+.ais-current-refined-values--count{
+  background: #d04a37;
+  color: white;
+}
